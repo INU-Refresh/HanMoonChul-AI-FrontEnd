@@ -20,13 +20,13 @@ export default function HomePage() {
               <span className="font-semibold text-sm sm:text-base md:text-lg text-gray-900 truncate">한문철 AI</span>
             </Link>
             <nav className="hidden md:flex items-center gap-6">
-              <Link href={"/analysis" as any} className="text-sm font-medium text-gray-900 hover:text-primary transition-colors">
+              <Link href="/analyze" className="text-sm font-medium text-gray-900 hover:text-primary transition-colors">
                 분석
               </Link>
-              <Link href={"/precedent" as any} className="text-sm font-medium text-gray-900 hover:text-primary transition-colors">
+              <Link href="/judicial-precedent" className="text-sm font-medium text-gray-900 hover:text-primary transition-colors">
                 판례
               </Link>
-              <Link href={"/mypage" as any} className="text-sm font-medium text-gray-900 hover:text-primary transition-colors">
+              <Link href="/my-page" className="text-sm font-medium text-gray-900 hover:text-primary transition-colors">
                 마이페이지
               </Link>
               <Link href="/auth">
@@ -58,21 +58,21 @@ export default function HomePage() {
           {mobileMenuOpen && (
             <div className="md:hidden border-t py-4 space-y-4">
               <Link
-                href={"/analysis" as any}
+                href="/analyze"
                 className="block px-4 py-2 text-sm font-medium text-gray-900 hover:bg-gray-50 transition-colors"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 분석
               </Link>
               <Link
-                href={"/precedent" as any}
+                href="/judicial-precedent"
                 className="block px-4 py-2 text-sm font-medium text-gray-900 hover:bg-gray-50 transition-colors"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 판례
               </Link>
               <Link
-                href={"/mypage" as any}
+                href="/my-page"
                 className="block px-4 py-2 text-sm font-medium text-gray-900 hover:bg-gray-50 transition-colors"
                 onClick={() => setMobileMenuOpen(false)}
               >
@@ -97,7 +97,7 @@ export default function HomePage() {
               복잡한 법적 문제를 빠르고 정확하게 해결하세요. 한문철 AI가 교통사고 영상을 분석하여 객관적인 과실비율과 판단 근거를 제공합니다.
             </p>
             <div className="flex justify-center md:justify-start pt-2">
-              <Link href={"/analysis" as any} className="w-full sm:w-auto">
+              <Link href="/analyze" className="w-full sm:w-auto">
                 <Button size="lg" className="gap-2 w-full sm:w-auto text-sm sm:text-base">
                   시작하기
                   <svg
@@ -274,7 +274,7 @@ export default function HomePage() {
           <p className="text-sm sm:text-base md:text-lg text-gray-600 max-w-2xl mx-auto px-2">
             보험사에서 불공정한 과실비율 판단을 받았다고 걱정하지 마세요. 한문철 AI가 스마트하게 도와드립니다.
           </p>
-          <Link href={"/analysis" as any} className="inline-block w-full sm:w-auto">
+          <Link href="/analyze" className="inline-block w-full sm:w-auto">
             <Button size="lg" variant="secondary" className="gap-2 w-full sm:w-auto text-sm sm:text-base">
               시작하기
               <svg
@@ -311,22 +311,22 @@ export default function HomePage() {
               <h3 className="font-semibold mb-4">지원</h3>
               <ul className="space-y-2 text-sm">
                 <li>
-                  <Link href={"/help" as any} className="text-gray-400 hover:text-white transition-colors">
+                  <Link href="/help" className="text-gray-400 hover:text-white transition-colors">
                     도움말
                   </Link>
                 </li>
                 <li>
-                  <Link href={"/contact" as any} className="text-gray-400 hover:text-white transition-colors">
+                  <Link href="/contact" className="text-gray-400 hover:text-white transition-colors">
                     문의하기
                   </Link>
                 </li>
                 <li>
-                  <Link href={"/privacy" as any} className="text-gray-400 hover:text-white transition-colors">
+                  <Link href="/policies/privacy-policy" className="text-gray-400 hover:text-white transition-colors">
                     개인정보처리방침
                   </Link>
                 </li>
                 <li>
-                  <Link href={"/terms" as any} className="text-gray-400 hover:text-white transition-colors">
+                  <Link href="/policies/terms-of-service" className="text-gray-400 hover:text-white transition-colors">
                     이용약관
                   </Link>
                 </li>
